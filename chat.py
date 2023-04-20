@@ -16,7 +16,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # get the local IP address and choose a port number
 host = socket.gethostbyname(socket.gethostname())
-port = 5000
+port = int(input('Enter the port number: '))
 
 # connect to the other user
 sock.connect(('localhost', port))
